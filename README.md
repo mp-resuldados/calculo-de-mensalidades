@@ -29,13 +29,14 @@ Os dados disponíveis para a análise foram:
 
   # Análise de dados
 
-Fizemos uma pesquisa de mercado para conhecer os valores de mensalidade praticados na região da escola. Além disso, pesquisamos qual seria o percentual médio de reajuste de mensalidades para o ano de 2024. Esses dados, juntamente com os valores de mensalidades praticados em 2023, serviram de base para a elaboração de um modelo para as finanças da escola. A partir do modelo, criamos uma fórmula matemática capaz de calcular os valores de mensalidades em função das horas de permanência na escola.
+Fizemos uma pesquisa de mercado para conhecer os valores de mensalidade praticados na região da escola. Além disso, pesquisamos qual seria o percentual médio de reajuste de mensalidades para o ano de 2024. Esses dados, juntamente com os valores de mensalidades praticados em 2023, serviram de base para a elaboração de um modelo para as receitas da escola. A partir do modelo, criamos uma fórmula matemática capaz de calcular os valores de mensalidades em função das horas de permanência na escola.
 
-A primeira dificuldade encontrada foi entender como as mensalidades estavam sendo calculadas anteriomente. A tabela vigente não estava sendo praticada. Praticamente todos os alunos da escola possuiam algum tipo de desconto. Os descontos previstos na tabela eram baseados em dois critérios que não serão citados para preservar a anonimidade, mas se dividiam em descontos de 15%, 18% e 5%, sendo o último um desconto pontualidade, cumulativo com os anteriores. Não havia informação se os descontos de 15 e 18% poderiam ser acumulados, apesar da possibilidade doas dois critérios serem atendidos simultaneamente.
+A primeira dificuldade encontrada foi entender como as mensalidades estavam sendo calculadas anteriomente. A tabela vigente não estava sendo praticada. Praticamente todos os alunos da escola possuiam algum tipo de desconto. Os descontos previstos na tabela eram baseados em dois critérios que não serão citados para preservar a anonimidade, mas se dividiam em descontos de 15%, 18% e 5%, sendo o último um desconto pontualidade, cumulativo com os anteriores. Não havia informação se os descontos de 15 e 18% poderiam ser acumulados, apesar da possibilidade dos dois critérios serem atendidos simultaneamente.
 
 Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para os tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
 
-![gráfico de mensalidades em função das horas de permanência na escola](./imagens/plano_de_mensalidades_antigo.png)
+![gráfico de mensalidades em função das horas de permanência na escola]
+(./imagens/plano_de_mensalidades_antigo.png)
 
 
 
