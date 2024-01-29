@@ -35,8 +35,7 @@ A primeira dificuldade encontrada foi entender como as mensalidades estavam send
 
 Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para os tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
 
-![gráfico de mensalidades em função das horas de permanência na escola]
-(./imagens/plano_de_mensalidades_antigo.png)
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/plano_de_mensalidades_antigo.png)
 
 
 
