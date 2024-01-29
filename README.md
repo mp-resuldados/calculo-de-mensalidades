@@ -33,11 +33,15 @@ Fizemos uma pesquisa de mercado para conhecer os valores de mensalidade praticad
 
 A primeira dificuldade encontrada foi entender como as mensalidades estavam sendo calculadas anteriomente. A tabela vigente não estava sendo praticada. Praticamente todos os alunos da escola possuiam algum tipo de desconto. Os descontos previstos na tabela eram baseados em dois critérios que não serão citados para preservar a anonimidade, mas se dividiam em descontos de 15%, 18% e 5%, sendo o último um desconto pontualidade, cumulativo com os anteriores. Não havia informação se os descontos de 15 e 18% poderiam ser acumulados, apesar da possibilidade dos dois critérios serem atendidos simultaneamente.
 
-Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para os tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
+Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para os tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto a partir dos documentos arquivados na escola. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
 
-![gráfico de mensalidades em função das horas de permanência na escola](./imagens/plano_de_mensalidades_antigo.png)
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023.png)
 
+Para entender como a dispersão dos valores pagos se relaciona com os descontos dados, consideramos todas as combinações possíveis de descontos previstos. Como resultado, vemos abaixo um gráfico onde as linhas cheias delimitam uma região possível de dispersão das mensalidades. Mas nem isso é capaz de explicar os valores.
 
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_descontos.png)
+
+Comparando ponto a ponto, vemos que alguns descontos se enquadram nas curvas previstas, podendo ter pequenos arredondamentos. Para conferir os dados, questionamos alguns responsáveis financeiros se se enquadravam nos critérios de desconto e a resposta foi não. Concluímos que os descontos foram dados sem nenhum critério. 
 
 
 
