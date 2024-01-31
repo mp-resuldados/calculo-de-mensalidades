@@ -41,7 +41,22 @@ Para entender como a dispersão dos valores pagos se relaciona com os descontos 
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_descontos.png)
 
-Comparando ponto a ponto, vemos que alguns descontos se enquadram nas curvas previstas, podendo ter pequenos arredondamentos. Para conferir os dados, questionamos alguns responsáveis financeiros se se enquadravam nos critérios de desconto e a resposta foi não. Concluímos que os descontos foram dados sem nenhum critério. 
+Comparando ponto a ponto, vemos que alguns descontos se enquadram nas curvas previstas, podendo ter pequenos arredondamentos. Para conferir os dados, questionamos alguns responsáveis financeiros se se enquadravam nos critérios de desconto e a resposta foi não. Concluímos que os descontos foram dados sem nenhum critério.
+
+## Modelo matemático
+
+Decidimos começar com um modelo linear baseado na tabela de 2023. Para isso, fizemos uma ajuste linear dos valores tabelados.
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_fitlinear.png)
+
+Como resultado, obtivemos que o valor da mensalidade pode ser descrita por um valor fixo de R$640,67 mais R$166,92 por hora de permanência. Adotando esses valores, a escola consegue cobrir as despesas e ter uma margem de lucro dentro da expectativa do dono.
+
+Dado que os valores atendem as expectativas do empresário, precisamos pensar se atendem as expectativas dos possíveis clientes. Pesquisando escolas da região, notamos uma prática comum de dar desconto progressivos com o número de horas de permanência na escola. Além disso, notamos que o valor para 4 horas está longe da concorrência. Abaixo, a comparação com as escolas pesquisadas:
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_concorrencia.png)
+
+Decidimos construir um modelo não linear que preveja descontos progressivos com o número de horas de premanência na escola e que permita reduzir o valor para 4 horas sem comprometer o orçamento.
+Considerando que os alunos passam, em média, 8 horas na escola estudada, decidimos suavizar a curva de mensalidades para mais de 8 horas de permanência. Assim, não comprometemos a renda e estimulamos a permanência por um tempo maior. Ao mesmo tempo, vamos tentar manter o modelo abaixo da concorrência.
 
 
-
+continua...  ;)
