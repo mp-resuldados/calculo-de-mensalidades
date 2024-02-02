@@ -60,6 +60,7 @@ Considerando que os alunos passam, em média, 8 horas na escola estudada, decidi
 Para pensar no novo modelo, comparamos o valor médio cobrado por hora nas escolas e o valor para 4h de permanência, onde o modelo está mais discrepante. O valor médio foi calculado usando como referência a distribuição de alunos no mês de agosto.
 
 | escola   |   por hora  | para 4h   |
+| -------- | ----------- | --------- |
 | A        |  R$ 285,88  | R$ 938,21 |
 | B        |  R$ 266,74  | R$ 1047,2 |
 | modelo 1 |  R$ 242,77  | R$ 1308,26|
