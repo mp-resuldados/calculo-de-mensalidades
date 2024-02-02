@@ -1,5 +1,4 @@
 # Cálculo de mensalidades para uma escola de período integral
-(repositório em construção...)
 
 ## Introdução
 
@@ -11,10 +10,10 @@ Propor uma tabela de mensalidades para o ano letivo de 2024. A tabela deve consi
 
 - os valores pagos no ano anterior;
 - os custos fixos e variáveis da escola;
-- os valores praticados nas escolas da região;
+- os valores praticados em escolas similars da região;
 - uma margem de lucro que possibilite uma recuperação financeira ao longo do ano dado o prejuízo do ano anterior.
 
-O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escola já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, todo o cálculo foi feito em apenas algunas dias.
+O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escola já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, toda a coleta de dados e os cálculos foram feitos em apenas algunas dias.
 
 # Dados
 
@@ -24,7 +23,7 @@ Os dados disponíveis para a análise foram:
 - tabela de mensalidades proposta para o ano de 2023;
 - valores de mensalidade efetivamente pagos em 2023;
 - extratos bancários das contas da escola dos meses de junho a outubro (únicos meses disponíveis. Para mais detalhes, ver repositório: diagnostico-escola);
-- valores praticados em 3 outras escolas da região;
+- valores praticados em 2 outras escolas da região;
   
 
   # Análise de dados
@@ -58,5 +57,31 @@ Dado que os valores atendem as expectativas do empresário, precisamos pensar se
 Decidimos construir um modelo não linear que preveja descontos progressivos com o número de horas de premanência na escola e que permita reduzir o valor para 4 horas sem comprometer o orçamento.
 Considerando que os alunos passam, em média, 8 horas na escola estudada, decidimos suavizar a curva de mensalidades para mais de 8 horas de permanência. Assim, não comprometemos a renda e estimulamos a permanência por um tempo maior. Ao mesmo tempo, vamos tentar manter o modelo abaixo da concorrência.
 
+Para pensar no novo modelo, comparamos o valor médio cobrado por hora nas escolas e o valor para 4h de permanência, onde o modelo está mais discrepante. O valor médio foi calculado usando como referência a distribuição de alunos no mês de agosto.
 
-continua...  ;)
+| escola   |   por hora  | para 4h   |
+| A        |  R$ 285,88  | R$ 938,21 |
+| B        |  R$ 266,74  | R$ 1047,2 |
+| modelo 1 |  R$ 242,77  | R$ 1308,26|
+
+Decidimos adotar um modelo linear onde o valor da hora é de R$250 e dar desontos progressivos de 5, 10, 15 e 20% respectivamente para 9, 10, 11 e 12h de permanência na escola. O modelo resultou na curva vermelha mostrada abaixo.
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_modelo3.png)
+
+A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos.
+
+# Conclusão
+
+A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas.
+
+O ponto de equilíbrio financeiro da escola (calculado em detalhes no repositório diagnostico-escola) era de 41 alunos no ano de 2023. Depois de enfrentar diversos problemas, a escola chegou em novembro com apenas 33 alunos, acumulando um prejuízo financeiro.
+
+Considerando somente o reajuste proposto de 12% para os alunos antigos, a escola passaria a ser capaz de suprir as despesas com os 33 alunos, mas praticamente sem lucro. Orientamos a escola para que direcionasse esforços na retenção dos alunos antigos e na captação de novos, para a geração de lucro. Considerando que a capacidade da escola é de 100 alunos e os preços são atraentes, a possibilidade de lucro é bastante satisfatória (se a tabela for seguida...).
+
+-----------------------------------------------------------------------------
+MP-resuldados
+
+Dos dados aos resultados. Um pouco de física, matemática, negócios e finanças.
+
+
+
