@@ -69,11 +69,16 @@ Decidimos adotar um modelo linear onde o valor da hora é de R$250 e dar desonto
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_modelo3.png)
 
-A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos.
+A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos. Com isso, o reajuste para os alunos antigos fica no limite da curva do modelo proposto. O resultado está mostrado no gráfico abaixo.
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_reajuste.png)
 
 # Conclusão
 
-A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas.
+A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. A curva dos valores para 2024 estão mostrados abaixo.
+
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2024.png)
 
 O ponto de equilíbrio financeiro da escola (calculado em detalhes no repositório diagnostico-escola) era de 41 alunos no ano de 2023. Depois de enfrentar diversos problemas, a escola chegou em novembro com apenas 33 alunos, acumulando um prejuízo financeiro.
 
