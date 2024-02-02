@@ -71,7 +71,7 @@ Decidimos adotar um modelo linear onde o valor da hora é de R$250 e dar desonto
 
 A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos. Com isso, o reajuste para os alunos antigos fica no limite da curva do modelo proposto. O resultado está mostrado no gráfico abaixo.
 
-![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_reajuste.png)
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_modelo3_reajuste.png)
 
 # Conclusão
 
