@@ -10,10 +10,10 @@ Propor uma tabela de mensalidades para o ano letivo de 2024. A tabela deve consi
 
 - os valores pagos no ano anterior;
 - os custos fixos e variáveis da escola;
-- os valores praticados em escolas similars da região;
+- os valores praticados em escolas similares da região;
 - uma margem de lucro que possibilite uma recuperação financeira ao longo do ano dado o prejuízo do ano anterior.
 
-O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escola já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, toda a coleta de dados e os cálculos foram feitos em apenas algunas dias.
+O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escolas já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, toda a coleta de dados e os cálculos foram feitos em apenas algunas dias.
 
 # Dados
 
@@ -65,7 +65,7 @@ Para pensar no novo modelo, comparamos o valor médio cobrado por hora nas escol
 |    B     |  R$ 266,74  | R$ 1047,20 |
 | modelo 1 |  R$ 242,77  | R$ 1308,26 |
 
-Decidimos adotar um modelo linear onde o valor da hora é de R$250 e dar desontos progressivos de 5, 10, 15 e 20% respectivamente para 9, 10, 11 e 12h de permanência na escola. O modelo resultou na curva vermelha mostrada abaixo.
+Com base nos valores da tabela acima, decidimos adotar um modelo linear onde o valor da hora é de R$250 e dar desontos progressivos de 5, 10, 15 e 20% respectivamente para 9, 10, 11 e 12h de permanência na escola. O modelo resultou na curva vermelha mostrada abaixo.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_modelo3.png)
 
@@ -73,16 +73,19 @@ A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_modelo3_reajuste.png)
 
+Comparando a curva proposta pela MP para 2024 com a curva anterior para 2023 (gráfico abaixo), temos agora uma curva mais ajustada à concorrência no limite inferior e com práticas de descontos similares. Embora o potencial de lucro da curva de 2024 seja 6% menor que o da curva de 2023, a direção da escola decidiu por não aumentar os valores, já que a tabela 2023 nunca havia sido realmente utilizada.
+
+![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023e2024.png)
+
 # Conclusão
 
 A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. A curva dos valores para 2024 estão mostrados abaixo.
-
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2024.png)
 
 O ponto de equilíbrio financeiro da escola (calculado em detalhes no repositório diagnostico-escola) era de 41 alunos no ano de 2023. Depois de enfrentar diversos problemas, a escola chegou em novembro com apenas 33 alunos, acumulando um prejuízo financeiro.
 
-Considerando somente o reajuste proposto de 12% para os alunos antigos, a escola passaria a ser capaz de suprir as despesas com os 33 alunos, mas praticamente sem lucro. Orientamos a escola para que direcionasse esforços na retenção dos alunos antigos e na captação de novos, para a geração de lucro. Considerando que a capacidade da escola é de 100 alunos e os preços são atraentes, a possibilidade de lucro é bastante satisfatória (se a tabela for seguida...).
+Considerando somente o reajuste proposto de 12% para os alunos antigos, a escola passaria a ser capaz de suprir as despesas com os 33 alunos, mas praticamente sem lucro. Orientamos a escola para que direcionasse esforços na retenção dos alunos antigos e na captação de novos, para a geração de lucro. Considerando que a capacidade da escola é de 100 alunos e os preços são atraentes, a possibilidade de lucro é bastante satisfatória (se a nova tabela for seguida...).
 
 -----------------------------------------------------------------------------
 MP-resuldados
