@@ -73,19 +73,23 @@ A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_modelo3_reajuste.png)
 
-Comparando a curva proposta pela MP para 2024 com a curva anterior para 2023 (gráfico abaixo), temos agora uma curva mais ajustada à concorrência no limite inferior e com práticas de descontos similares. Embora o potencial de lucro da curva de 2024 seja 6% menor que o da curva de 2023, a direção da escola decidiu por não aumentar os valores, já que a tabela 2023 nunca havia sido realmente utilizada.
+Comparando a curva proposta pela MP para 2024 com a curva anterior para 2023 (gráfico abaixo), temos agora uma curva mais ajustada à concorrência no limite inferior e com práticas de descontos similares. De posse do modelo, podemos fazer algum ajuste percentual para levar em consideração o aumento de despesas para o ano seguinte (reajuste de salários, aluguel e serviços necessários para o funcionamento da escola).
+
+Embora o potencial de lucro da curva de 2024 seja 6% menor que o da curva de 2023, a direção da escola decidiu por não aumentar os valores, já que a tabela 2023 nunca havia sido realmente utilizada.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023e2024.png)
 
 # Conclusão
 
-A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. A curva dos valores para 2024 estão mostrados abaixo.
+A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. Os valores para 2024 estão mostrados abaixo.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2024.png)
 
 O ponto de equilíbrio financeiro da escola (calculado em detalhes no repositório diagnostico-escola) era de 41 alunos no ano de 2023. Depois de enfrentar diversos problemas, a escola chegou em novembro com apenas 33 alunos, acumulando um prejuízo financeiro.
 
-Considerando somente o reajuste proposto de 12% para os alunos antigos, a escola passaria a ser capaz de suprir as despesas com os 33 alunos, mas praticamente sem lucro. Orientamos a escola para que direcionasse esforços na retenção dos alunos antigos e na captação de novos, para a geração de lucro. Considerando que a capacidade da escola é de 100 alunos e os preços são atraentes, a possibilidade de lucro é bastante satisfatória (se a nova tabela for seguida...).
+Considerando somente o reajuste proposto de 12% para os 33 alunos antigos, a escola não seria capaz de suprir as despesas de 2024. Orientamos a escola para que direcionasse esforços na retenção dos alunos antigos e na captação de novos, para a geração de lucro. Considerando que a capacidade da escola é de 100 alunos e os preços são atraentes, a possibilidade de lucro é bastante satisfatória (se a nova tabela for seguida...).
+
+Para orientar melhor uma tomada de decisão sobre o futuro da escola, calculamos uma previsão das despesas e receitas para 2024. Os detalhes se encontram no repositório viabilidade-de-negocio. 
 
 -----------------------------------------------------------------------------
 MP-resuldados
