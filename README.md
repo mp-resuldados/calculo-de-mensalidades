@@ -13,16 +13,16 @@ Propor uma tabela de mensalidades para o ano letivo de 2024. A tabela deve consi
 - os valores praticados em escolas similares da região;
 - uma margem de lucro que possibilite uma recuperação financeira ao longo do ano dado o prejuízo do ano anterior.
 
-O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escolas já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, toda a coleta de dados e os cálculos foram feitos em apenas algunas dias.
+O cálculo foi solicitado no início do mês de novembro, época em que a maioria das escolas já está efetuando rematrículas para o ano seguinte. Dada a urgência da situação, toda a coleta de dados e os cálculos foram feitos em apenas alguns dias.
 
 # Dados
 
-Os dados financeiros foram anonomizados usando um fator de conversão.
+Os dados financeiros foram anonimizados usando um fator de conversão.
 Os dados disponíveis para a análise foram:
 
 - tabela de mensalidades proposta para o ano de 2023;
 - valores de mensalidade efetivamente pagos em 2023;
-- extratos bancários das contas da escola dos meses de junho a outubro (únicos meses disponíveis. Para mais detalhes, ver repositório: diagnostico-escola);
+- extratos bancários das contas da escola dos meses de junho a outubro (únicos meses disponíveis. Para mais detalhes, veja: diagnostico-escola);
 - valores praticados em 2 outras escolas da região;
   
 
@@ -30,9 +30,9 @@ Os dados disponíveis para a análise foram:
 
 Fizemos uma pesquisa de mercado para conhecer os valores de mensalidade praticados na região da escola. Além disso, pesquisamos qual seria o percentual médio de reajuste de mensalidades para o ano de 2024. Esses dados, juntamente com os valores de mensalidades praticados em 2023, serviram de base para a elaboração de um modelo para as receitas da escola. A partir do modelo, criamos uma fórmula matemática capaz de calcular os valores de mensalidades em função das horas de permanência na escola.
 
-A primeira dificuldade encontrada foi entender como as mensalidades estavam sendo calculadas anteriomente. A tabela vigente não estava sendo praticada. Praticamente todos os alunos da escola possuiam algum tipo de desconto. Os descontos previstos na tabela eram baseados em dois critérios que não serão citados para preservar a anonimidade, mas se dividiam em descontos de 15%, 18% e 5%, sendo o último um desconto pontualidade, cumulativo com os anteriores. Não havia informação se os descontos de 15 e 18% poderiam ser acumulados, apesar da possibilidade dos dois critérios serem atendidos simultaneamente.
+A primeira dificuldade encontrada foi entender como as mensalidades estavam sendo calculadas anteriormente. A tabela vigente não estava sendo praticada. Praticamente todos os alunos da escola possuíam algum tipo de desconto. Os descontos previstos na tabela eram baseados em dois critérios que não serão citados para preservar a anonimidade, mas se dividiam em descontos de 15% e 18%. Além desses, havia também um desconto pontualidade cumulativo com os anteriores. Não havia informação se os descontos de 15% e 18% poderiam ser acumulados, apesar da possibilidade de os dois critérios serem atendidos simultaneamente.
 
-Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para os tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto a partir dos documentos arquivados na escola. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
+Não havia registro formal dos descontos praticados e nenhuma comprovação de atendimento dos critérios para tais descontos. Foi impossível relacionar cada aluno com os critérios de desconto a partir dos documentos arquivados na escola. Segue abaixo a comparação entre as mensalidades tabeladas sem desconto e as efetivamente praticadas no mês de agosto de 2023.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023.png)
 
@@ -40,7 +40,7 @@ Para entender como a dispersão dos valores pagos se relaciona com os descontos 
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_descontos.png)
 
-Comparando ponto a ponto, vemos que alguns descontos se enquadram nas curvas previstas, podendo ter pequenos arredondamentos. Para conferir os dados, questionamos alguns responsáveis financeiros se se enquadravam nos critérios de desconto e a resposta foi não. Concluímos que os descontos foram dados sem nenhum critério.
+Comparando ponto a ponto, vemos que alguns descontos se enquadram nas curvas previstas, podendo ter pequenos arredondamentos. Para conferir os dados, questionamos alguns responsáveis financeiros se eles se enquadravam nos critérios de desconto, mas a resposta foi negativa. Concluímos que os descontos foram dados sem nenhum critério.
 
 ## Modelo matemático
 
@@ -48,13 +48,13 @@ Decidimos começar com um modelo linear baseado na tabela de 2023. Para isso, fi
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_fitlinear.png)
 
-Como resultado, obtivemos que o valor da mensalidade pode ser descrita por um valor fixo de R$640,67 mais R$166,92 por hora de permanência. Adotando esses valores, a escola consegue cobrir as despesas e ter uma margem de lucro dentro da expectativa do dono.
+Como resultado, obtivemos que o valor da mensalidade pode ser descrita por um valor fixo de R$640,67 mais R$166,92 por hora de permanência. Adotando esses valores, a escola conseguiria cobrir as despesas e ter uma margem de lucro dentro da expectativa do dono.
 
 Dado que os valores atendem as expectativas do empresário, precisamos pensar se atendem as expectativas dos possíveis clientes. Pesquisando escolas da região, notamos uma prática comum de dar desconto progressivos com o número de horas de permanência na escola. Além disso, notamos que o valor para 4 horas está longe da concorrência. Abaixo, a comparação com as escolas pesquisadas:
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_concorrencia.png)
 
-Decidimos construir um modelo não linear que preveja descontos progressivos com o número de horas de premanência na escola e que permita reduzir o valor para 4 horas sem comprometer o orçamento.
+Decidimos construir um modelo não linear que preveja descontos progressivos com o número de horas de permanência na escola e que permita reduzir o valor para 4 horas sem comprometer o orçamento.
 Considerando que os alunos passam, em média, 8 horas na escola estudada, decidimos suavizar a curva de mensalidades para mais de 8 horas de permanência. Assim, não comprometemos a renda e estimulamos a permanência por um tempo maior. Ao mesmo tempo, vamos tentar manter o modelo abaixo da concorrência.
 
 Para pensar no novo modelo, comparamos o valor médio cobrado por hora nas escolas e o valor para 4h de permanência, onde o modelo está mais discrepante. O valor médio foi calculado usando como referência a distribuição de alunos no mês de agosto.
@@ -69,7 +69,7 @@ Com base nos valores da tabela acima, decidimos adotar um modelo linear onde o v
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2023_modelo3.png)
 
-A curva tem um ótimo potencial de lucro, resolvemos a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos. Com isso, o reajuste para os alunos antigos fica no limite da curva do modelo proposto. O resultado está mostrado no gráfico abaixo.
+A curva tem um ótimo potencial de lucro, resolve a discrepância no tempo de 4h e está bem abaixo da concorrência para os demais tempos. Porém, o aumento de mensalidade real para os alunos já matriculados, ultrapassa 12% em 70% dos casos. Em reunião com a direção da escola, foi decidido adotar o modelo proposto para alunos novos e praticar o aumento de no máximo 12% para os alunos antigos. Com isso, o reajuste para os alunos antigos fica no limite da curva do modelo proposto. O resultado está mostrado no gráfico abaixo.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_modelo3_reajuste.png)
 
@@ -81,7 +81,7 @@ Embora o potencial de lucro da curva de 2024 seja 6% menor que o da curva de 202
 
 # Conclusão
 
-A MP-resultados juntamente com a direção da escola decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. Os valores para 2024 estão mostrados abaixo.
+A MP-resuldados, juntamente com a direção da escola, decidiram adotar o modelo proposto para os alunos novos em 2024 e praticar o aumento de no máximo 12% para os alunos antigos. A diferença entre o valor pago pelos alunos antigos e a tabela nova passou a ser uma bolsa de estudos. O desconto pontualidade de 5% pode ser mantido sem comprometimento das despesas. Os valores para 2024 estão mostrados abaixo.
 
 ![gráfico de mensalidades em função das horas de permanência na escola](./imagens/mensalidades_2024.png)
 
